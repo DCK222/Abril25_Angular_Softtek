@@ -1,0 +1,14 @@
+<h1>Dar de alta Producto</h1>
+
+<div id="conteañadirpro">
+  <p>Nombre del Producto:</p>
+  <input type="text" [(ngModel)]="producto.nombreProducto" name="nombreProducto">
+
+  <p>Precio Unitario:</p>
+  <input type="number" [(ngModel)]="producto.precioUnitario" name="precioUnitario">
+
+  <p>Unidades en Stock:</p>
+  <input type="number" [(ngModel)]="producto.unidadesStock" name="unidadesStock">
+
+  <button (click)="daralta()">Añadir Producto</button>
+</div>

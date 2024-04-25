@@ -1,0 +1,8 @@
+<h1>Lista de Productos</h1>
+@for(elemento of productos; track $index){
+    <ul>
+        <li>{{elemento.idProducto}}{{elemento.nombreProducto}}{{elemento.precioUnitario}}{{elemento.unidadesStock}}</li>
+      
+    </ul>
+
+}

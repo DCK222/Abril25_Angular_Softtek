@@ -1,0 +1,11 @@
+#conteañadirpro{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 2px solid black;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 8px;
+    gap: 10px;
+    
+}
