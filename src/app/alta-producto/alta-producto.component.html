@@ -1,4 +1,4 @@
-<h1>Dar de alta Producto</h1>
+<!-- <h1>Dar de alta Producto</h1>
 
 <div id="conteañadirpro">
   <p>Nombre del Producto:</p>
@@ -11,4 +11,24 @@
   <input type="number" [(ngModel)]="producto.unidadesStock" name="unidadesStock">
 
   <button (click)="daralta()">Añadir Producto</button>
+</div> -->
+
+<form [formGroup]="form" #frmProdcuto="ngForm" (ngSubmit)="operar()">
+
+  @if(edicion){
+    <label for="">ID empleado</label>
+    <input placeholder="Id producto" required [readOnly]="true" formControlName="idProducto">
+
+  }
+<div id="rrw">
+  <label for="">Nombre Producto</label>
+  <input placeholder="nombreProducto" required formControlName="nombreProducto">
+  <label for="">Precio Unitario</label>
+  <input placeholder="precioUnitario" required formControlName="precioUnitario">
+  <label for="">Unidades Stock</label>
+  <input placeholder="unidadesStock" required formControlName="unidadesStock">
+
+ <button type="submit" [disabled]="frmProdcuto.invalid">Aceptar</button>
+ <button type="button" routerLink="/" >Cancelar</button>
 </div>
+</form>

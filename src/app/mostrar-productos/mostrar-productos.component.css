@@ -1,0 +1,13 @@
+#contenedorlista{
+    margin: 5%;
+    width: 100%;
+    display: flex;
+    height: auto;
+   
+   
+    flex-direction: column;
+}
+.botnoe{
+    margin-top: 1%;
+    width: 30%;
+}

@@ -23,6 +23,11 @@ export class ProductoService {
     }
 
     eliminar(idProducto: number): Observable<any> {
+        console.log('Producto Eliminado');
         return this.http.delete(`${this.ulrPuerto}/${idProducto}`);
+        
+      }
+      listarProductoPorId(idProducto: number): Observable<Producto> {
+        return this.http.get<Producto>(`${this.ulrPuerto}/${idProducto}`);
       }
 }

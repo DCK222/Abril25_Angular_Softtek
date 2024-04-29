@@ -1,8 +1,19 @@
+<div id="contenedorlista">
 <h1>Lista de Productos</h1>
-@for(elemento of productos; track $index){
-    <ul>
-        <li>{{elemento.idProducto}}{{elemento.nombreProducto}}{{elemento.precioUnitario}}{{elemento.unidadesStock}}</li>
-      
-    </ul>
 
+@for(elemento of productos; track $index){
+    <div id="conte">
+    <table>
+        <tr>
+          <td>{{ elemento.idProducto }}</td>
+          <td>{{ elemento.nombreProducto }}</td>
+          <td>{{ elemento.precioUnitario }}</td>
+          <td>{{ elemento.unidadesStock }}</td>
+        </tr>
+      </table>
+    </div>
 }
+<button class="botnoe" routerLink="alta">Alta de un nuevo producto</button>
+<button class="botnoe" routerLink="borrar">Dar de baja Producto</button>
+</div>
+<router-outlet></router-outlet>

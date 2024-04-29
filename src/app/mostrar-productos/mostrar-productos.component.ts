@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from '../_modelo/producto';
 import { ProductoService } from '../_servicios/producto.service';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-mostrar-productos',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet, RouterModule],
   templateUrl: './mostrar-productos.component.html',
   styleUrl: './mostrar-productos.component.css'
 })
